@@ -10,22 +10,22 @@
 
 Позитивные данные:
 
-* 500_000_000
-* 100_000_000
-* 0
-* 1
+* int SumTransfer = 500_000_000 принимается системой
+* int SumTransfer = 100_000_000 принимается системой
+* int SumTransfer = 999_999_999 принимается системой
+* int SumTransfer = 1 принимается системой
 
 Негативные данные:
-* -500_000_000
-* пустое значение
-* пробел
-* Money Transfer
+* int SumTransfer = -500_000_000 не принимается системой
+* int SumTransfer = пустое значение не принимается системой
+* int SumTransfer = 0 не принимается системой
+* int SumTransfer = "Money Transfer" не принимается системой
 
 ## Результаты
 
-1. 75% успешных и 25% неуспешных тестов
+1. 62% успешных и 38% неуспешных тестов
 2. Ссылка на багрепорт: https://github.com/d-AMigo/Money-Transfer/issues/1
 
 ## Общие рекомендации
 
-В качестве типа данных для CurrentBalance, SumTransfer, TotalBalance рекомендую использоваться double
+В качестве типа данных для CurrentBalance, SumTransfer, TotalBalance рекомендую использовать double
